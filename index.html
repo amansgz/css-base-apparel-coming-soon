@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS Josefin Sans 300, 400, 600 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- JS -->
+  <script src= "./scripts/main.js" defer></script>
+  <title>Frontend Mentor | Base Apparel Coming Soon</title>
+</head>
+<body> 
+  <header>
+    <img 
+      class= "logo"
+      src= "./styles/images/logo.svg" 
+      alt= "logo">
+  </header>
+  <main>
+    <picture class= "picture">
+      <source 
+        srcset= "./styles/images/hero-mobile.jpg" 
+        media= "(max-width: 767px)"
+        srcset= "./styles/images/hero-desktop.jpg" 
+        media= "(min-width: 768px)"
+        >
+      <img 
+        class= "main-img"
+        src= "./styles/images/hero-desktop.jpg" 
+        alt= "Base Apparel model">
+    </picture>
+    <section class= "main-section">
+      <div class= "intro">
+        <h1 class= "title">
+          <span class= "highlighted">
+            We're
+          </span> 
+          coming <br/>
+          soon
+        </h1>
+        <p class= "text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form>
+          <div class="form-field">
+            <input 
+              class="form-input"
+              type="email" 
+              name="email" 
+              placeholder="Email Address">
+            <label class= "icon-error"></label>       
+            <button class="btn-submit">
+              <img             
+                src="./styles/images/icon-arrow.svg" 
+                alt="">
+            </button>          
+          </div>
+          <p class="error-message">
+            Please provide a valid email
+          </p>
+        </form>
+      </div>
+    </section>  
+    
+  </main>
+  
+</body>
+</html>
