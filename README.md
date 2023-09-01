@@ -1,10 +1,4 @@
-# 👩‍💻 Frontend Mentor - Base Apparel Coming Soon Page
-
-[Frontend Mentor challenges](https://www.frontendmentor.io/) help you improve your coding skills by building realistic projects.
-
-This is a solution for [Base Apparel Coming Soon challenge](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
-
-![Design preview for the Base Apparel Coming Soon Page coding challenge](./styles/images/preview.png)
+# 👩‍💻 Base Apparel Coming Soon Page
 
 
 ## The challenge
@@ -27,10 +21,20 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-## Live site solution
 
-[Live site](https://amansgz.github.io/css-base-apparel-coming-soon/) deployed with GitHub Pages.
 
-## Author
+<div>
+  <h3>
+    <a href= "https://amansgz.github.io/css-base-apparel-coming-soon/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+![Design preview for the Base Apparel Coming Soon Page coding challenge](./styles/images/preview.png)
+
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
