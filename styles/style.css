@@ -14,7 +14,7 @@
 
   /* PADDINGS */
   --header-block-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.912)), 4rem);
-  --inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 5.7361)), 8rem);
+  --inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 13.3843)), 16rem);
 }
 * {
   padding: 0;
@@ -162,8 +162,8 @@ img {
   .content {
     order: 1;
     grid-column: 1 / 2;
-    justify-content: center;
     align-items: flex-start;
+    margin-top: 5rem;
     text-align: left;
   }
   .content__text {
