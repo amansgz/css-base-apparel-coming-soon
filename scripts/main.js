@@ -1,25 +1,25 @@
-const formInput = document.querySelector('.form-input');
-const btnSubmit = document.querySelector('.btn-submit');
-const iconError = document.querySelector('.icon-error');
-const errorMessage = document.querySelector('.error-message');
+const inputEmail = document.querySelector('.input__email');
+const btnSubmit = document.querySelector('.btn__submit');
+const errorIcon = document.querySelector('.error__icon');
+const errorMessage = document.querySelector('.error__message');
 
 
 btnSubmit.addEventListener('click', e => {
   e.preventDefault();
 
-  const emailValue = formInput.value;
+  const emailValue = inputEmail.value;
   const validation = validate_email(emailValue);
 
-  if (!validation || formInput.value == '') {
-    iconError.style.opacity = '1';
+  if (!validation || inputEmail.value == '') {
+    errorIcon.style.opacity = '1';
     errorMessage.style.opacity = '1';
-    formInput.style.border = '1px solid red';
+    inputEmail.style.border = '1px solid red';
   }
   if(validation) {
-    iconError.style.opacity = '0';
+    errorIcon.style.opacity = '0';
     errorMessage.style.opacity = '0';
-    formInput.style.border = '1px solid hsl(0, 6%, 80%)';
-    formInput.value = '';
+    inputEmail.style.border = '1px solid hsl(0, 6%, 80%)';
+    inputEmail.value = '';
   }
 })
 
