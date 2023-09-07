@@ -5,6 +5,7 @@
   --light-soft-red: hsl(0, 78%, 66%);
   --dark-grayish-red: hsl(0, 6%, 24%);
   --light-grayish-red: hsl(0, 6%, 80%);
+  --white: hsl(0, 0%, 100%);
 
   /* GRADIENTS */
   --body-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
@@ -26,10 +27,11 @@ html {
 }
 body {
   max-width: 1440px;
-  min-height: 100vh;
-  margin: 0 auto;
+  min-height: 100%;
+  margin: auto;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
+  background-color: var(--white);
   background-image: var(--body-gradient);
 }
 figure,
@@ -54,7 +56,6 @@ img {
   HERO
 /******************************/
 .hero__section {
-  padding: 2rem var(--inline-padding);
   padding: 2rem 0;
 }
 .hero__image img {
@@ -134,6 +135,7 @@ img {
   text-align: left;
   opacity: 0;
 }
+
 /******************************
   MEDIA QUERIES 992px
 /******************************/
