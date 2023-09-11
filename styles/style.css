@@ -9,6 +9,12 @@
 
   /* GRADIENTS */
   --body-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+  --body-gradient-header: 
+  linear-gradient(25deg, hsl(0, 83%, 99%) 25%,
+  hsl(0, 80%, 100%) 35%,
+  hsl(0, 0%, 98%) 100%);
+
   --btn-submit-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   --hover-btn-submit-gradient: linear-gradient(130deg, hsl(0, 80%, 90%), hsl(0, 74%, 85%));
 
@@ -29,6 +35,7 @@ body {
   margin: 0 auto;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
+  background-color: var(--white);
   background-image: var(--body-gradient);
 }
 figure,
@@ -153,17 +160,18 @@ img {
   MEDIA QUERIES 1024px
 /******************************/
 @media screen and (min-width: 1024px) {
-  body {
-    background-image: url(./images/bg-pattern-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 58%;
-    background-position: top left;
+  .header {
+    background-image: var(--body-gradient-header);
   }
   main {
     height: 100vh;
   }
   .hero__section {
     padding: 0;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 58%;
+    background-position: top left;
   }
   .grid__container {
     display: grid;
